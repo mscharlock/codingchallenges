@@ -1,5 +1,5 @@
-
-//Find the middle of a linked list: 
+Find the Middle of A Linked List (2 Ways)
+```//Find the middle of a linked list: 
 current = head; 
 length = 0; 
 middle = head; 
@@ -17,12 +17,13 @@ while(current.next) {
   }
   return middle; 
 }
+```
 
 Runtime: O(n), because we're iterating through once
 Memory usage: We have to keep track of a couple of variables, including length
 
 ----------------
-//Another way 
+```//Another way 
 fast = head; 
 slow = head; 
 
@@ -33,6 +34,7 @@ while (fast.next) {
   }
   return slow 
 }
+ ```
  
  This essentially does the same thing, but doesn't mod by 2, it counts over by 2
 Runtime: O(n) - we're still iterating through only once
